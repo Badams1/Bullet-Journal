@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: #AEC09A;">
+        <children>
+            <VBox layoutX="100" layoutY="100" spacing="20">
+                <Label style="-fx-font-size: 24px;" text="Create New Event"/>
+                <HBox spacing="20">
+                    <Label style="-fx-font-size: 18px;" text="Name:"/>
+                    <TextField fx:id="eventName" style="-fx-font-size: 18px; -fx-background-color: #b7c9a3; -fx-text-fill: #1A2902"/>
+                </HBox>
+                <VBox spacing="20">
+                    <Label style="-fx-font-size: 18px;" text="Description:"/>
+                    <TextArea fx:id="eventDescription" prefHeight="150.0" prefWidth="400.0" style="-fx-background-color: #b7c9a3;
+                    -fx-text-fill: #1A2902; -fx-font-size: 18px" wrapText="true"/>
+                </VBox>
+                <HBox spacing="20">
+                    <Label style="-fx-font-size: 18px;" text="Day of Week:"/>
+                    <MenuButton fx:id="dayOfWeekButton" maxHeight="60.0" minHeight="60.0" minWidth="180.0"
+                                prefHeight="60.0" prefWidth="180.0" style="-fx-font-size: 18px; -fx-background-color:
+                                #778D45; -fx-text-fill: #1A2902" text="...">
+                        <items>
+                            <MenuItem fx:id="sundayItem" text="SUNDAY" style="-fx-font-size: 18px; -fx-background-color:
+                                #778D45; -fx-text-fill: #1A2902"/>
+                            <MenuItem fx:id="mondayItem" text="MONDAY" style="-fx-font-size: 18px; -fx-background-color:
+                                #778D45; -fx-text-fill: #1A2902"/>
+                            <MenuItem fx:id="tuesdayItem" text="TUESDAY" style="-fx-font-size: 18px; -fx-background-color:
+                                #778D45; -fx-text-fill: #1A2902"/>
+                            <MenuItem fx:id="wednesdayItem" text="WEDNESDAY" style="-fx-font-size: 18px; -fx-background-color:
+                                #778D45; -fx-text-fill: #1A2902"/>
+                            <MenuItem fx:id="thursdayItem" text="THURSDAY" style="-fx-font-size: 18px; -fx-background-color:
+                                #778D45; -fx-text-fill: #1A2902"/>
+                            <MenuItem fx:id="fridayItem" text="FRIDAY" style="-fx-font-size: 18px; -fx-background-color:
+                                #778D45; -fx-text-fill: #1A2902"/>
+                            <MenuItem fx:id="saturdayItem" text="SATURDAY" style="-fx-font-size: 18px; -fx-background-color:
+                                #778D45; -fx-text-fill: #1A2902"/>
+                        </items>
+                    </MenuButton>
+                </HBox>
+                <HBox spacing="20">
+                    <Label style="-fx-font-size: 18px;" text="Start Time:"/>
+                    <TextField fx:id="startTimeField" style="-fx-font-size: 18px; -fx-background-color:
+                                #b7c9a3; -fx-text-fill: #1A2902"/>
+                </HBox>
+                <HBox spacing="20">
+                    <Label style="-fx-font-size: 18px;" text="Duration(mins):"/>
+                    <TextField fx:id="durationField" style="-fx-font-size: 18px; -fx-background-color:
+                                #b7c9a3; -fx-text-fill: #1A2902"/>
+                </HBox>
+                <HBox layoutX="100" layoutY="100" spacing="20">
+                    <Button fx:id="createEventButton" style="-fx-font-size: 18px; -fx-background-color: #778D45;
+                            -fx-text-fill: #1A2902" text="CREATE">
+                        <font>
+                            <Font name="System Bold" size="16.0"/>
+                        </font>
+                    </Button>
+                    <Button fx:id="exitButton" style="-fx-font-size: 18px; -fx-background-color: #778D45;
+                            -fx-text-fill: #1A2902" text="EXIT">
+                        <font>
+                            <Font name="System Bold" size="16.0"/>
+                        </font>
+                    </Button>
+                </HBox>
+            </VBox>
+        </children>
+    </AnchorPane>
+</Scene>

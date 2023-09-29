@@ -1,0 +1,56 @@
+{
+  "weekName" : "Example",
+  "days" : [ {
+    "tasks" : [ {
+      "taskName" : "22d",
+      "taskDescription" : null,
+      "day" : null,
+      "complete" : false
+    } ],
+    "events" : [ ],
+    "day" : "SUNDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "MONDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "TUESDAY"
+  }, {
+    "tasks" : [ {
+      "taskName" : "22d",
+      "taskDescription" : null,
+      "day" : null,
+      "complete" : false
+    } ],
+    "events" : [ ],
+    "day" : "WEDNESDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ {
+      "eventName" : "dwd",
+      "eventDescription" : null,
+      "day" : null,
+      "startTime" : null,
+      "duration" : null
+    } ],
+    "day" : "THURSDAY"
+  }, {
+    "tasks" : [ {
+      "taskName" : "22d",
+      "taskDescription" : null,
+      "day" : null,
+      "complete" : false
+    } ],
+    "events" : [ ],
+    "day" : "FRIDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "SATURDAY"
+  } ],
+  "weekNotesQuotes" : "random",
+  "maxDayTasks" : 0,
+  "maxDayEvents" : 0
+}

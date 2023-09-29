@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Scene xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane fx:id="mainBackground" maxHeight="819.0" maxWidth="1428.0" prefHeight="797.0" prefWidth="1373.0" style="-fx-background-color: #E8EDE7;">
+        <children>
+            <HBox alignment="CENTER" maxHeight="75.0" maxWidth="1200.0" minHeight="50.0" minWidth="1200.0" prefHeight="50.0" prefWidth="1200.0">
+                <children>
+                    <Button fx:id="newWeek" maxHeight="60.0" minHeight="60.0" minWidth="120.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #378BA4; -fx-text-fill: #1A2902" text="NEW WEEK">
+                        <font>
+                            <Font name="Tahoma" size="18" />
+                        </font>
+                    </Button>
+                    <Button fx:id="newEvent" maxHeight="60.0" minHeight="60.0" minWidth="140.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #378BA4; -fx-text-fill: #012E4A" text="NEW EVENT">
+                        <font>
+                            <Font name="Tahoma" size="18" />
+                        </font>
+                    </Button>
+                    <Button fx:id="newTask" maxHeight="60.0" minHeight="60.0" minWidth="120.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #378BA4; -fx-text-fill: #012E4A" text="NEW TASK">
+                        <font>
+                            <Font name="Tahoma" size="18" />
+                        </font>
+                    </Button>
+                    <Button fx:id="openFile" maxHeight="60.0" minHeight="60.0" minWidth="120.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #378BA4; fx-text-fill: #012E4A" text="OPEN">
+                        <font>
+                            <Font name="Tahoma" size="18.0" />
+                        </font>
+                    </Button>
+                    <Button fx:id="saveFile" maxHeight="60.0" minHeight="60.0" minWidth="120.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #378BA4; -fx-text-fill: #012E4A " text="SAVE">
+                        <font>
+                            <Font name="Tahoma" size="18" />
+                        </font>
+                    </Button>
+                    <Button fx:id="settings" maxHeight="60.0" minHeight="60.0" minWidth="120.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="120.0" style="-fx-background-color: #378BA4; -fx-text-fill: #012E4A;" text="SETTINGS">
+                        <font>
+                            <Font name="Tahoma" size="18" />
+                        </font>
+                    </Button>
+                </children>
+            </HBox>
+            <TextField fx:id="weekName" alignment="CENTER" layoutX="400.0" layoutY="75.0" prefHeight="60.0" prefWidth="400.0" promptText="ENTER WEEK NAME" style="-fx-background-color: #f5faf3; -fx-text-fill: #012E4A">
+                <font>
+                    <Font name="Merriweather" size="30" />
+                </font>
+            </TextField>
+            <GridPane gridLinesVisible="true" layoutY="150.0" maxHeight="650.0" maxWidth="1200.0" minHeight="595.0" minWidth="1200.0" prefHeight="650.0" prefWidth="1200.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="171.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="171.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="171.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="171.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="171.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="171.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="171.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="600.0" minHeight="10.0" prefHeight="600.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <Label fx:id="SUN" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #378BA4;" text="SUN">
+                        <font>
+                            <Font name="Georgia" size="22.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="MON" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #378BA4;" text="MON" GridPane.columnIndex="1">
+                        <font>
+                            <Font name="Georgia" size="22.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="TUE" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #378BA4;" text="TUE" GridPane.columnIndex="2">
+                        <font>
+                            <Font name="Georgia" size="22.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="WED" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #378BA4;" text="WED" GridPane.columnIndex="3">
+                        <font>
+                            <Font name="Georgia" size="22.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="THU" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #378BA4;" text="THU" GridPane.columnIndex="4">
+                        <font>
+                            <Font name="Georgia" size="22.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="FRI" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #378BA4;" text="FRI" GridPane.columnIndex="5">
+                        <font>
+                            <Font name="Georgia" size="22.0" />
+                        </font>
+                    </Label>
+                    <Label fx:id="SAT" alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #378BA4;" text="SAT" GridPane.columnIndex="6">
+                        <font>
+                            <Font name="Georgia" size="22.0" />
+                        </font>
+                    </Label>
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="172.0" GridPane.rowIndex="1">
+                        <children>
+                            <HBox alignment="TOP_CENTER" layoutX="6" layoutY="40" spacing="0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                                <Label fx:id="sunProgText" ellipsisString="" prefHeight="17.0" prefWidth="107.0" text="                                       " />
+                                <ProgressBar fx:id="sunProgress" prefWidth="100.0" progress="0.0" rotate="-90.0" style="-fx-background-color: #E8EDE7;" />
+                            </HBox>
+                            <ListView fx:id="sunListView" layoutX="1.0" layoutY="100.0" prefHeight="500.0" prefWidth="170.0" style="-fx-background-color: #E8EDE7;" />
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="172.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <children>
+                            <HBox alignment="TOP_CENTER" layoutX="6" layoutY="40" spacing="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <Label fx:id="monProgText" ellipsisString="" prefHeight="17.0" prefWidth="105.0" />
+                                <ProgressBar fx:id="monProgress" prefWidth="100.0" progress="0.0" rotate="-90.0" style="-fx-background-color: #E8EDE7;" />
+                            </HBox>
+                            <ListView fx:id="monListView" layoutX="1.0" layoutY="100.0" prefHeight="500.0" prefWidth="170.0" style="-fx-background-color: #E8EDE7;" />
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="172.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <children>
+                            <HBox alignment="TOP_CENTER" layoutX="6" layoutY="40" spacing="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <Label fx:id="tueProgText" ellipsisString="" prefHeight="17.0" prefWidth="106.0" text="                                       " />
+                                <ProgressBar fx:id="tueProgress" prefWidth="100.0" progress="0.0" rotate="-90.0" style="-fx-background-color: #E8EDE7;" />
+                            </HBox>                            <ListView fx:id="tueListView" layoutX="1.0" layoutY="100.0" prefHeight="500.0" prefWidth="170.0" style="-fx-background-color: #E8EDE7;" />
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="172.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                        <children>
+                            <HBox alignment="TOP_CENTER" layoutX="6" layoutY="40" spacing="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <Label fx:id="wedProgText" ellipsisString="" prefHeight="17.0" prefWidth="110.0" text="                                       " />
+                                <ProgressBar fx:id="wedProgress" prefWidth="100.0" progress="0.0" rotate="-90.0" style="-fx-background-color: #E8EDE7;" />
+                            </HBox>                            <ListView fx:id="wedListView" layoutX="1.0" layoutY="100.0" prefHeight="500.0" prefWidth="170.0" style="-fx-background-color: #E8EDE7;" />
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="172.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                        <children>
+                            <HBox alignment="TOP_CENTER" layoutX="6" layoutY="40" spacing="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <Label fx:id="thuProgText" ellipsisString="" prefHeight="17.0" prefWidth="105.0" text="                                       " />
+                                <ProgressBar fx:id="thuProgress" prefWidth="100.0" progress="0.0" rotate="-90.0" style="-fx-background-color: #E8EDE7;" />
+                            </HBox>                            <ListView fx:id="thuListView" layoutX="1.0" layoutY="100.0" prefHeight="500.0" prefWidth="170.0" style="-fx-background-color: #E8EDE7;" />
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="172.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                        <children>
+                            <HBox alignment="TOP_CENTER" layoutX="6" layoutY="40" spacing="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <Label fx:id="friProgText" ellipsisString="" prefHeight="17.0" prefWidth="104.0" text="                                       " />
+                                <ProgressBar fx:id="friProgress" prefWidth="100.0" progress="0.0" rotate="-90.0" style="-fx-background-color: #E8EDE7;" />
+                            </HBox>                            <ListView fx:id="friListView" layoutX="1.0" layoutY="100.0" prefHeight="500.0" prefWidth="170.0" style="-fx-background-color: #E8EDE7;" />
+
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="172.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                        <children>
+                            <HBox alignment="TOP_CENTER" layoutX="6" layoutY="40" spacing="0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <Label fx:id="satProgText" ellipsisString="" prefHeight="17.0" prefWidth="107.0" text="                                       " />
+                                <ProgressBar fx:id="satProgress" prefWidth="100.0" progress="0.0" rotate="-90.0" style="-fx-background-color: #E8EDE7;" />
+                            </HBox>                            <ListView fx:id="satListView" layoutX="1.0" layoutY="100.0" prefHeight="500.0" prefWidth="170.0" style="-fx-background-color: #E8EDE7;" />
+                        </children>
+                    </AnchorPane>
+                </children>
+            </GridPane>
+            <VBox alignment="TOP_CENTER" layoutX="1200.0" layoutY="150.0" prefHeight="650.0" prefWidth="172.0" spacing="20.0">
+                <children>
+                    <Label alignment="TOP_CENTER" text="Task Queue">
+                        <font>
+                            <Font name="Georgia" size="20" />
+                        </font>
+                    </Label>
+                    <ListView fx:id="taskQueue" maxHeight="1.7976931348623157E308" maxWidth="160.0" prefHeight="354.0" prefWidth="124.0" style="-fx-background-color: #E8EDE7;" VBox.vgrow="SOMETIMES" />
+                    <Label alignment="TOP_CENTER" text="Quotes and Notes">
+                        <font>
+                            <Font name="Georgia" size="20" />
+                        </font>
+                    </Label>
+                    <TextArea fx:id="quotesAndNotes" maxWidth="160.0" promptText="type here" wrapText="true"/>
+                </children>
+            </VBox>
+        </children>
+    </AnchorPane>
+</Scene>

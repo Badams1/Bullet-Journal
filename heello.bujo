@@ -1,0 +1,46 @@
+{
+  "weekName" : "heello",
+  "days" : [ {
+    "tasks" : [ {
+      "taskName" : "wdwdwd",
+      "taskDescription" : "wdwd",
+      "day" : null,
+      "complete" : false
+    } ],
+    "events" : [ ],
+    "day" : "SUNDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "MONDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ {
+      "eventName" : "wdwd",
+      "eventDescription" : "",
+      "day" : null,
+      "startTime" : "",
+      "duration" : ""
+    } ],
+    "day" : "TUESDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "WEDNESDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "THURSDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "FRIDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "SATURDAY"
+  } ],
+  "weekNotesQuotes" : "wdwdwdwh\n",
+  "maxDayTasks" : 0,
+  "maxDayEvents" : 0
+}

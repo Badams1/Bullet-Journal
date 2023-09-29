@@ -1,0 +1,35 @@
+{
+  "weekName" : null,
+  "days" : [ {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "SUNDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "MONDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "TUESDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "WEDNESDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "THURSDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "FRIDAY"
+  }, {
+    "tasks" : [ ],
+    "events" : [ ],
+    "day" : "SATURDAY"
+  } ],
+  "weekNotesQuotes" : null,
+  "maxDayTasks" : 0,
+  "maxDayEvents" : 0
+}
